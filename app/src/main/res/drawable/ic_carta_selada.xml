@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Ilustração da tela de visualização: carta lacrada com selo de ampulheta. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="240"
+    android:viewportHeight="240">
+
+    <!-- Brilho de fundo -->
+    <path
+        android:fillColor="#FF241A5E"
+        android:pathData="M10,120a110,110 0 1,0 220,0a110,110 0 1,0 -220,0Z" />
+
+    <!-- Estrelas -->
+    <path
+        android:fillColor="#FFFFB547"
+        android:pathData="M44,30L45.8,35.2L51,37L45.8,38.8L44,44L42.2,38.8L37,37L42.2,35.2Z" />
+    <path
+        android:fillColor="#FFB9AFFF"
+        android:pathData="M202,196L203.5,200.5L208,202L203.5,203.5L202,208L200.5,203.5L196,202L200.5,200.5Z" />
+    <path
+        android:fillColor="#FFF3EEFF"
+        android:pathData="M198,36a2,2 0 1,0 4,0a2,2 0 1,0 -4,0Z M24,196a2,2 0 1,0 4,0a2,2 0 1,0 -4,0Z M120,220a2,2 0 1,0 4,0a2,2 0 1,0 -4,0Z" />
+
+    <!-- Envelope -->
+    <path
+        android:fillColor="#FFF3EEFF"
+        android:pathData="M50,70L190,70A10,10 0 0,1 200,80L200,170A10,10 0 0,1 190,180L50,180A10,10 0 0,1 40,170L40,80A10,10 0 0,1 50,70Z" />
+    <path
+        android:fillColor="#00000000"
+        android:strokeLineCap="round"
+        android:strokeWidth="3"
+        android:strokeColor="#FFC9C0EE"
+        android:pathData="M44,176L104,128M196,176L136,128" />
+    <!-- Aba fechada -->
+    <path
+        android:fillColor="#FFDCD3FA"
+        android:pathData="M40,80A10,10 0 0,1 50,70L190,70A10,10 0 0,1 200,80L120,140Z" />
+
+    <!-- Selo de cera com ampulheta -->
+    <path
+        android:fillColor="#FFFFB547"
+        android:pathData="M96,138a24,24 0 1,0 48,0a24,24 0 1,0 -48,0Z" />
+    <path
+        android:fillColor="#00000000"
+        android:strokeAlpha="0.5"
+        android:strokeWidth="2"
+        android:strokeColor="#FF7A4A00"
+        android:pathData="M103,138a17,17 0 1,0 34,0a17,17 0 1,0 -34,0Z" />
+    <path
+        android:fillColor="#FF7A4A00"
+        android:pathData="M111,127L129,127L120,138L129,149L111,149L120,138Z" />
+
+    <!-- Brilho do futuro saindo da carta -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeLineCap="round"
+        android:strokeWidth="4"
+        android:strokeColor="#FFFFB547"
+        android:pathData="M120,56L120,40M92,60L84,46M148,60L156,46" />
+</vector>

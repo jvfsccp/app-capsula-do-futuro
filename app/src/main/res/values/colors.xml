@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Paleta "céu noturno + luz do amanhã" -->
+    <color name="ceu_profundo">#FF0F0B2E</color>
+    <color name="ceu_horizonte">#FF2A1F66</color>
+    <color name="superficie">#FF1B1646</color>
+    <color name="superficie_borda">#FF3A3180</color>
+    <color name="ambar">#FFFFB547</color>
+    <color name="ambar_escuro">#FF2A1800</color>
+    <color name="violeta_claro">#FFB9AFFF</color>
+    <color name="texto_principal">#FFF3EEFF</color>
+    <color name="texto_secundario">#FFB7AEDB</color>
+    <color name="erro">#FFFF8A80</color>
+    <color name="erro_escuro">#FF5C1A14</color>
+    <color name="trilha_seekbar">#FF4B4299</color>
+</resources>

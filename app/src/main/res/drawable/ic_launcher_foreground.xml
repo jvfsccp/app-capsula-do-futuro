@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Primeiro plano do ícone adaptativo: cápsula inclinada com estrelas. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <path
+        android:fillColor="#FFFFB547"
+        android:pathData="M36,34L37.2,37.8L41,39L37.2,40.2L36,44L34.8,40.2L31,39L34.8,37.8Z" />
+    <path
+        android:fillColor="#FFF3EEFF"
+        android:pathData="M72,70L73,73L76,74L73,75L72,78L71,75L68,74L71,73Z" />
+
+    <group
+        android:pivotX="54"
+        android:pivotY="54"
+        android:rotation="-35">
+        <path
+            android:fillColor="#FFFFB547"
+            android:pathData="M54,42L43,42A12,12 0 0,0 43,66L54,66Z" />
+        <path
+            android:fillColor="#FF7C6CFF"
+            android:pathData="M54,42L65,42A12,12 0 0,1 65,66L54,66Z" />
+        <path
+            android:fillColor="#FFF3EEFF"
+            android:pathData="M51,40L57,40L57,68L51,68Z" />
+    </group>
+</vector>

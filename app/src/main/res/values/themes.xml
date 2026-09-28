@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Identidade visual escura fixa: a cápsula "viaja" por um céu noturno. -->
+    <style name="Theme.CapsulaDoFuturo" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/ambar</item>
+        <item name="colorOnPrimary">@color/ambar_escuro</item>
+        <item name="colorPrimaryContainer">@color/ambar</item>
+        <item name="colorOnPrimaryContainer">@color/ambar_escuro</item>
+        <item name="colorSecondary">@color/violeta_claro</item>
+        <item name="colorOnSecondary">@color/ceu_profundo</item>
+        <item name="colorError">@color/erro</item>
+        <item name="colorOnError">@color/erro_escuro</item>
+        <item name="android:colorBackground">@color/ceu_profundo</item>
+        <item name="colorSurface">@color/superficie</item>
+        <item name="colorOnSurface">@color/texto_principal</item>
+        <item name="colorOnSurfaceVariant">@color/texto_secundario</item>
+        <item name="colorOutline">@color/superficie_borda</item>
+        <item name="android:windowBackground">@drawable/bg_ceu_noturno</item>
+        <item name="textInputStyle">@style/Widget.CapsulaDoFuturo.CampoTexto</item>
+    </style>
+
+    <style name="Widget.CapsulaDoFuturo.CampoTexto" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusTopStart">14dp</item>
+        <item name="boxCornerRadiusTopEnd">14dp</item>
+        <item name="boxCornerRadiusBottomStart">14dp</item>
+        <item name="boxCornerRadiusBottomEnd">14dp</item>
+        <item name="boxBackgroundColor">@color/superficie</item>
+    </style>
+
+    <!-- Estilos de texto reaproveitados nas duas telas -->
+    <style name="Texto.Titulo" parent="TextAppearance.Material3.HeadlineMedium">
+        <item name="android:textColor">@color/texto_principal</item>
+        <item name="android:fontFamily">serif</item>
+        <item name="fontFamily">serif</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Texto.Sobretitulo" parent="TextAppearance.Material3.LabelLarge">
+        <item name="android:textColor">@color/ambar</item>
+        <item name="android:letterSpacing">0.15</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="Texto.Corpo" parent="TextAppearance.Material3.BodyLarge">
+        <item name="android:textColor">@color/texto_secundario</item>
+    </style>
+
+    <style name="Texto.Rotulo" parent="TextAppearance.Material3.TitleSmall">
+        <item name="android:textColor">@color/texto_principal</item>
+    </style>
+
+    <style name="Texto.Destaque" parent="TextAppearance.Material3.HeadlineSmall">
+        <item name="android:textColor">@color/ambar</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

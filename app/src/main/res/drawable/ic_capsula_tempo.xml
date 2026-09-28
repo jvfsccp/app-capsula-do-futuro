@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Ilustração da tela de criação: cápsula atravessando um portal, com relógio e estrelas. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="240"
+    android:viewportHeight="240">
+
+    <!-- Brilho do portal -->
+    <path
+        android:fillColor="#FF241A5E"
+        android:pathData="M10,120a110,110 0 1,0 220,0a110,110 0 1,0 -220,0Z" />
+    <path
+        android:fillColor="#00000000"
+        android:strokeWidth="4"
+        android:strokeColor="#FF7C6CFF"
+        android:pathData="M24,120a96,96 0 1,0 192,0a96,96 0 1,0 -192,0Z" />
+    <path
+        android:fillColor="#00000000"
+        android:strokeAlpha="0.5"
+        android:strokeWidth="2"
+        android:strokeColor="#FFFFB547"
+        android:pathData="M40,120a80,80 0 1,0 160,0a80,80 0 1,0 -160,0Z" />
+
+    <!-- Estrelas -->
+    <path
+        android:fillColor="#FFFFB547"
+        android:pathData="M40,43L41.8,48.2L47,50L41.8,51.8L40,57L38.2,51.8L33,50L38.2,48.2Z" />
+    <path
+        android:fillColor="#FFF3EEFF"
+        android:pathData="M198,32L199.5,36.5L204,38L199.5,39.5L198,44L196.5,39.5L192,38L196.5,36.5Z" />
+    <path
+        android:fillColor="#FFB9AFFF"
+        android:pathData="M30,171L31.2,174.8L35,176L31.2,177.2L30,181L28.8,177.2L25,176L28.8,174.8Z" />
+    <path
+        android:fillColor="#FFF3EEFF"
+        android:pathData="M68,22a2,2 0 1,0 4,0a2,2 0 1,0 -4,0Z M213,150a2,2 0 1,0 4,0a2,2 0 1,0 -4,0Z M118,226a2,2 0 1,0 4,0a2,2 0 1,0 -4,0Z M14,112a2,2 0 1,0 4,0a2,2 0 1,0 -4,0Z" />
+
+    <!-- Cápsula inclinada -->
+    <group
+        android:pivotX="120"
+        android:pivotY="120"
+        android:rotation="-35">
+        <!-- Rastro de luz -->
+        <path
+            android:fillColor="#00000000"
+            android:strokeAlpha="0.45"
+            android:strokeLineCap="round"
+            android:strokeWidth="5"
+            android:strokeColor="#FFFFB547"
+            android:pathData="M8,108L40,108M16,132L44,132" />
+        <!-- Metade âmbar -->
+        <path
+            android:fillColor="#FFFFB547"
+            android:pathData="M120,92L76,92A28,28 0 0,0 76,148L120,148Z" />
+        <!-- Metade violeta -->
+        <path
+            android:fillColor="#FF7C6CFF"
+            android:pathData="M120,92L164,92A28,28 0 0,1 164,148L120,148Z" />
+        <!-- Anel central -->
+        <path
+            android:fillColor="#FFF3EEFF"
+            android:pathData="M113,88L127,88L127,152L113,152Z" />
+        <!-- Reflexos -->
+        <path
+            android:fillColor="#00000000"
+            android:strokeAlpha="0.6"
+            android:strokeLineCap="round"
+            android:strokeWidth="5"
+            android:strokeColor="#FFFFFFFF"
+            android:pathData="M78,102L104,102M136,102L160,102" />
+    </group>
+
+    <!-- Relógio -->
+    <path
+        android:fillColor="#FF1B1646"
+        android:strokeWidth="4"
+        android:strokeColor="#FFFFB547"
+        android:pathData="M146,176a26,26 0 1,0 52,0a26,26 0 1,0 -52,0Z" />
+    <path
+        android:fillColor="#00000000"
+        android:strokeLineCap="round"
+        android:strokeWidth="4"
+        android:strokeColor="#FFFFB547"
+        android:pathData="M172,176L172,160M172,176L184,182" />
+    <path
+        android:fillColor="#FFF3EEFF"
+        android:pathData="M169,176a3,3 0 1,0 6,0a3,3 0 1,0 -6,0Z" />
+</vector>
