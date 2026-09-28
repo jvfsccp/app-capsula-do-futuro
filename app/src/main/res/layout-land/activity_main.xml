@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Tela 1 (paisagem): identidade visual à esquerda, formulário à direita. -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll_criacao"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_criacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margem_tela">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guia_colunas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.38" />
+
+        <!-- Coluna da esquerda: apresentação -->
+        <ImageView
+            android:id="@+id/img_capsula"
+            android:layout_width="@dimen/imagem_destaque_land"
+            android:layout_height="@dimen/imagem_destaque_land"
+            android:contentDescription="@string/desc_imagem_capsula"
+            android:src="@drawable/ic_capsula_tempo"
+            app:layout_constraintEnd_toStartOf="@id/guia_colunas"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_sobretitulo_criacao"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espaco_medio"
+            android:layout_marginEnd="@dimen/espaco_grande"
+            android:gravity="center"
+            android:text="@string/sobretitulo_criacao"
+            android:textAppearance="@style/Texto.Sobretitulo"
+            app:layout_constraintEnd_toStartOf="@id/guia_colunas"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/img_capsula" />
+
+        <TextView
+            android:id="@+id/txt_titulo_criacao"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="@dimen/espaco_grande"
+            android:gravity="center"
+            android:text="@string/titulo_criacao"
+            android:textAppearance="@style/Texto.Titulo"
+            app:layout_constraintEnd_toStartOf="@id/guia_colunas"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_sobretitulo_criacao" />
+
+        <TextView
+            android:id="@+id/txt_orientacao"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espaco_pequeno"
+            android:layout_marginEnd="@dimen/espaco_grande"
+            android:gravity="center"
+            android:text="@string/orientacao_criacao"
+            android:textAppearance="@style/Texto.Corpo"
+            app:layout_constraintEnd_toStartOf="@id/guia_colunas"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_titulo_criacao" />
+
+        <!-- Coluna da direita: formulário -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_autor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/rotulo_autor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/guia_colunas"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_autor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="name"
+                android:imeOptions="actionNext|flagNoExtractUi"
+                android:inputType="textPersonName|textCapWords"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_titulo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espaco_pequeno"
+            android:hint="@string/rotulo_titulo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/guia_colunas"
+            app:layout_constraintTop_toBottomOf="@id/layout_autor">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext|flagNoExtractUi"
+                android:inputType="text|textCapSentences"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_ano"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espaco_pequeno"
+            android:hint="@string/rotulo_ano"
+            app:helperText="@string/ajuda_ano"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/guia_colunas"
+            app:layout_constraintTop_toBottomOf="@id/layout_titulo">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_ano"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext|flagNoExtractUi"
+                android:inputType="number"
+                android:maxLength="4" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_mensagem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espaco_pequeno"
+            android:hint="@string/rotulo_mensagem"
+            app:counterEnabled="true"
+            app:helperText="@string/ajuda_mensagem"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/guia_colunas"
+            app:layout_constraintTop_toBottomOf="@id/layout_ano">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_mensagem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|start"
+                android:imeOptions="flagNoExtractUi"
+                android:inputType="textMultiLine|textCapSentences"
+                android:minLines="3" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_importancia"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espaco_medio"
+            android:background="@drawable/bg_cartao"
+            android:padding="@dimen/espaco_medio"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/guia_colunas"
+            app:layout_constraintTop_toBottomOf="@id/layout_mensagem">
+
+            <TextView
+                android:id="@+id/txt_rotulo_importancia"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:labelFor="@id/seek_importancia"
+                android:text="@string/rotulo_importancia"
+                android:textAppearance="@style/Texto.Rotulo"
+                app:layout_constraintBaseline_toBaselineOf="@id/txt_valor_importancia"
+                app:layout_constraintEnd_toStartOf="@id/txt_valor_importancia"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_valor_importancia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Texto.Destaque"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="85%" />
+
+            <SeekBar
+                android:id="@+id/seek_importancia"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/espaco_pequeno"
+                android:contentDescription="@string/desc_seekbar_importancia"
+                android:max="100"
+                android:progress="50"
+                android:progressBackgroundTint="@color/trilha_seekbar"
+                android:progressTint="@color/ambar"
+                android:thumbTint="@color/ambar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_valor_importancia" />
+
+            <TextView
+                android:id="@+id/txt_nivel_importancia"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/espaco_pequeno"
+                android:textAppearance="@style/Texto.Corpo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/seek_importancia"
+                tools:text="@string/nivel_importancia_essencial" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_selar_capsula"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espaco_medio"
+            android:minHeight="60dp"
+            android:text="@string/botao_selar"
+            android:textSize="16sp"
+            app:icon="@drawable/ic_cadeado"
+            app:iconGravity="textStart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/guia_colunas"
+            app:layout_constraintTop_toBottomOf="@id/layout_importancia" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
