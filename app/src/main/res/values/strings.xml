@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="Typos">
+    <string name="app_name">Cápsula do Futuro</string>
+
+    <!-- Tela 1: criação -->
+    <string name="sobretitulo_criacao">Portal do tempo</string>
+    <string name="titulo_criacao">Escreva para quem você será</string>
+    <string name="orientacao_criacao">Preencha sua cápsula, escolha o ano em que ela poderá ser aberta e sele a mensagem até lá.</string>
+    <string name="desc_imagem_capsula">Ilustração de uma cápsula do tempo atravessando um portal, com um relógio ao lado</string>
+
+    <string name="rotulo_autor">Seu nome</string>
+    <string name="rotulo_titulo">Título da cápsula</string>
+    <string name="rotulo_ano">Ano de abertura</string>
+    <string name="ajuda_ano">Escolha um ano depois de 2026</string>
+    <string name="rotulo_mensagem">Mensagem para o futuro</string>
+    <string name="ajuda_mensagem">Escreva pelo menos 20 caracteres</string>
+
+    <string name="rotulo_importancia">Grau de importância</string>
+    <string name="valor_importancia">%1$d%%</string>
+    <string name="desc_seekbar_importancia">Grau de importância da mensagem, de 0 a 100 por cento</string>
+    <string name="nivel_importancia_leve">Uma lembrança leve</string>
+    <string name="nivel_importancia_media">Vale a pena lembrar</string>
+    <string name="nivel_importancia_alta">Muito importante</string>
+    <string name="nivel_importancia_essencial">Essencial para o meu futuro</string>
+
+    <string name="botao_selar">Selar cápsula</string>
+
+    <!-- Mensagens de validação -->
+    <string name="erro_autor_vazio">Informe o nome de quem está escrevendo</string>
+    <string name="erro_titulo_vazio">Dê um título para a sua cápsula</string>
+    <string name="erro_ano_vazio">Informe o ano de abertura</string>
+    <string name="erro_ano_invalido">O ano de abertura precisa ser posterior a 2026</string>
+    <string name="erro_mensagem_vazia">Escreva uma mensagem para o futuro</string>
+    <string name="erro_mensagem_curta">A mensagem precisa ter pelo menos 20 caracteres (atual: %1$d)</string>
+
+    <!-- Tela 2: visualização -->
+    <string name="titulo_tela_capsula">Cápsula selada</string>
+    <string name="sobretitulo_capsula">Cápsula selada</string>
+    <string name="desc_imagem_carta">Ilustração de uma carta lacrada com um selo de ampulheta</string>
+    <string name="criada_por">Cápsula criada por %1$s para ser aberta em %2$d.</string>
+    <plurals name="anos_restantes">
+        <item quantity="one">Falta %1$d ano para a abertura</item>
+        <item quantity="many">Faltam %1$d anos para a abertura</item>
+        <item quantity="other">Faltam %1$d anos para a abertura</item>
+    </plurals>
+    <string name="pronta_para_abrir">Esta cápsula já pode ser aberta!</string>
+    <string name="rotulo_mensagem_capsula">Mensagem guardada</string>
+    <string name="rotulo_importancia_capsula">Importância</string>
+    <string name="desc_barra_importancia">Indicador visual da importância da mensagem</string>
+
+    <string name="botao_editar">Editar</string>
+    <string name="botao_compartilhar">Compartilhar</string>
+    <string name="texto_compartilhado">Minha cápsula para %1$d: %2$s %3$s</string>
+    <string name="titulo_escolher_app">Compartilhar cápsula com…</string>
+    <string name="erro_sem_app_compartilhar">Nenhum aplicativo disponível para compartilhar</string>
+</resources>
