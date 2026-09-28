@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Tela 2 (retrato): visualização da cápsula selada. -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll_capsula"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fillViewport="true"
+    tools:context=".CapsulaActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_capsula"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margem_tela">
+
+        <ImageView
+            android:id="@+id/img_carta_selada"
+            android:layout_width="@dimen/imagem_destaque"
+            android:layout_height="@dimen/imagem_destaque"
+            android:contentDescription="@string/desc_imagem_carta"
+            android:src="@drawable/ic_carta_selada"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_sobretitulo_capsula"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espaco_medio"
+            android:gravity="center"
+            android:text="@string/sobretitulo_capsula"
+            android:textAppearance="@style/Texto.Sobretitulo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/img_carta_selada" />
+
+        <TextView
+            android:id="@+id/txt_titulo_capsula"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:textAppearance="@style/Texto.Titulo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_sobretitulo_capsula"
+            tools:text="Uma mensagem para o meu futuro" />
+
+        <TextView
+            android:id="@+id/txt_criada_por"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espaco_pequeno"
+            android:gravity="center"
+            android:textAppearance="@style/Texto.Corpo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_titulo_capsula"
+            tools:text="Cápsula criada por Fernando para ser aberta em 2030." />
+
+        <TextView
+            android:id="@+id/txt_contagem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espaco_medio"
+            android:background="@drawable/bg_selo"
+            android:paddingHorizontal="@dimen/espaco_medio"
+            android:paddingVertical="6dp"
+            android:textAppearance="@style/TextAppearance.Material3.LabelLarge"
+            android:textColor="@color/ambar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_criada_por"
+            tools:text="Faltam 4 anos para a abertura" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_mensagem_capsula"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espaco_grande"
+            android:background="@drawable/bg_cartao"
+            android:padding="@dimen/margem_tela"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_contagem">
+
+            <TextView
+                android:id="@+id/txt_rotulo_mensagem_capsula"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/rotulo_mensagem_capsula"
+                android:textAppearance="@style/Texto.Sobretitulo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_mensagem_capsula"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/espaco_pequeno"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.25"
+                android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+                android:textColor="@color/texto_principal"
+                android:textIsSelectable="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_rotulo_mensagem_capsula"
+                tools:text="Espero que você ainda se lembre dos sonhos que tinha quando escreveu esta mensagem." />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_importancia_capsula"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espaco_medio"
+            android:background="@drawable/bg_cartao"
+            android:padding="@dimen/espaco_medio"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layout_mensagem_capsula">
+
+            <TextView
+                android:id="@+id/txt_rotulo_importancia_capsula"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/rotulo_importancia_capsula"
+                android:textAppearance="@style/Texto.Rotulo"
+                app:layout_constraintBaseline_toBaselineOf="@id/txt_importancia_capsula"
+                app:layout_constraintEnd_toStartOf="@id/txt_importancia_capsula"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_importancia_capsula"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Texto.Destaque"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="85%" />
+
+            <ProgressBar
+                android:id="@+id/progress_importancia"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/espaco_pequeno"
+                android:contentDescription="@string/desc_barra_importancia"
+                android:max="100"
+                android:progressBackgroundTint="@color/trilha_seekbar"
+                android:progressTint="@color/ambar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_importancia_capsula"
+                tools:progress="85" />
+
+            <TextView
+                android:id="@+id/txt_nivel_importancia_capsula"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/espaco_pequeno"
+                android:textAppearance="@style/Texto.Corpo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/progress_importancia"
+                tools:text="@string/nivel_importancia_essencial" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_editar"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espaco_grande"
+            android:layout_marginEnd="6dp"
+            android:minHeight="56dp"
+            android:text="@string/botao_editar"
+            app:icon="@drawable/ic_editar"
+            app:iconGravity="textStart"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btn_compartilhar"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layout_importancia_capsula"
+            app:layout_constraintVertical_bias="0" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_compartilhar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:minHeight="56dp"
+            android:text="@string/botao_compartilhar"
+            app:icon="@drawable/ic_compartilhar"
+            app:iconGravity="textStart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btn_editar"
+            app:layout_constraintTop_toTopOf="@id/btn_editar" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
